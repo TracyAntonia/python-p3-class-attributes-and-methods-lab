@@ -43,3 +43,16 @@ class Song:
             Song.artist_count[self.artist] += 1
         else:    
             Song.artist_count[self.artist] = 1
+
+
+# List of songs
+song1 = Song("Slow Hands", "Naill Horan", "Pop")  
+song2 = Song("Youngblood", "5 seconds of summer", "Pop")           
+song3 = Song("Miss Independent", "Ne-Yo", "RnB")
+song4 = Song("Closer", "Ne-Yo", "RnB")  
+
+
+print("Total songs:", Song.count)
+print("Genres available:", Song.genres)
+print("Artists:", Song.artists)
+print("Genre count:", Song.genre_count)
